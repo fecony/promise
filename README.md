@@ -9,6 +9,8 @@ Full-stack promise app built with [wasp-lang](https://wasp-lang.dev/)
 
 </details>
 
+![Capture-2023-05-07-232446](https://user-images.githubusercontent.com/36774784/236701095-dfc04511-a473-42d8-9068-fd304b2b3aad.png)
+
 ## Installation
 
 Clone the project
