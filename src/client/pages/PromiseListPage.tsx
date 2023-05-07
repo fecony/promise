@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Link as UILink, Page, Text, Divider } from '@geist-ui/core';
+import { Loading, Page, Text, Divider } from '@geist-ui/core';
 import { useQuery } from '@wasp/queries';
 import getPromises from '@wasp/queries/getPromises';
 import { Promise as PromiseEntity } from '@wasp/entities';
@@ -9,7 +9,7 @@ const PromiseListPage = () => {
   const { data: promises, isFetching } = useQuery(getPromises);
 
   if (isFetching) {
-    return 'Getting promises...';
+    return <Loading type='success' />;
   }
 
   return (
@@ -19,7 +19,7 @@ const PromiseListPage = () => {
       </Page.Header>
 
       <Link to='/'>
-        <UILink underline>Main Page</UILink>
+        <Text>Main Page</Text>
       </Link>
 
       {promises &&

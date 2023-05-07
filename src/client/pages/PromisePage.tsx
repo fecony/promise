@@ -1,12 +1,4 @@
-import {
-  Link as UILink,
-  Page,
-  Text,
-  Input,
-  Spacer,
-  Button,
-  useToasts,
-} from '@geist-ui/core';
+import { Page, Text, Input, Spacer, Button, useToasts } from '@geist-ui/core';
 import { Link } from 'react-router-dom';
 import makePromise from '@wasp/actions/makePromise';
 import Heart from '@geist-ui/icons/heart';
@@ -43,7 +35,7 @@ const PromisePage = () => {
       </Page.Header>
 
       <Link to='/'>
-        <UILink underline>Main Page</UILink>
+        <Text>Main Page</Text>
       </Link>
 
       <Spacer />

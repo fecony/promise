@@ -1,11 +1,4 @@
-import {
-  Link as UILink,
-  Text,
-  Display,
-  Button,
-  Grid,
-  Spacer,
-} from '@geist-ui/core';
+import { Text, Display, Button, Grid, Spacer } from '@geist-ui/core';
 import Github from '@geist-ui/icons/github';
 import Send from '@geist-ui/icons/send';
 import { Link, useHistory } from 'react-router-dom';
@@ -53,7 +46,7 @@ const MainPage = () => {
 
         <Grid xs={12} justify='center'>
           <Link to='/promise'>
-            <UILink block>Read other Developer promises.</UILink>
+            <Text>Read other Developer promises</Text>
           </Link>
         </Grid>
       </Grid.Container>
